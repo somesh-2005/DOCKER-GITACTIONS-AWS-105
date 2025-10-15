@@ -11,7 +11,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   backend:
-    image: somesh150805/dockeraws-backend:latest
+    image: somesh150805/dockeraws-backend1:latest
     container_name: springboot
     ports:
       - "2025:8080"
@@ -20,7 +20,7 @@ services:
     restart: on-failure
 
   frontend:
-    image: somesh150805/dockeraws-frontend:latest
+    image: somesh150805/dockeraws-frontend2:latest
     container_name: react
     ports:
       - "3000:80"
