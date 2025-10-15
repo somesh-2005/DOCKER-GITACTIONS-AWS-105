@@ -20,7 +20,7 @@ services:
     restart: on-failure
 
   frontend:
-    image: somesh150805/dockeraws-frontend2:latest
+    image: somesh150805/dockeraws-frontend1:latest
     container_name: react
     ports:
       - "3000:80"

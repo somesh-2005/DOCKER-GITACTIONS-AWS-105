@@ -28,7 +28,7 @@ jobs:
           context: ./STUDENTAPI-SPRINGBOOT
           file: ./STUDENTAPI-SPRINGBOOT/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/dockeraws-backend:latest
+          tags: ${{ secrets.DOCKER_USER }}/dockeraws-backend1:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v6
@@ -36,7 +36,7 @@ jobs:
           context: ./STUDENTAPI-REACT
           file: ./STUDENTAPI-REACT/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/dockeraws-frontend:latest
+          tags: ${{ secrets.DOCKER_USER }}/dockeraws-frontend1:latest
 
       - name: Save EC2 private key
         run: |
